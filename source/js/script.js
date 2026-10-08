@@ -7,12 +7,17 @@ import dummyApiResponse from "../../tests/fixtures/api-response.json" with { typ
 
 window.addEventListener("load", () => {
   const api = new CercForecastApi();
-  const zone = config.ZONE;
+  // const zone = config.ZONE;
 
   const urlParams = new URLSearchParams(window.location.search);
+  const zone = urlParams.get('zone') || config.ZONE;
 
+  const orientation = urlParams.get('orientation') || config.SCREEN_ORIENTATION;
+
+  
+  
   // Rotate the display if set
-  if (config.SCREEN_ORIENTATION === "portrait") {
+  if (orientation === "portrait") {
     document.documentElement.style.setProperty("--rotation", "-90deg");
     document.documentElement.style.setProperty("--translate-x", "-100vh");
     document.documentElement.style.setProperty("--full-width", "100vh");

@@ -33,6 +33,11 @@ export CERC_FORECAST_API_KEY="YOUR_API_KEY_HERE"
 scripts/set-api-key.sh
 ```
 
+Note: you may need to run:
+```
+chmod +x set-api-key.sh
+```
+
 Install the dependencies:
 
 ```bash
@@ -113,11 +118,18 @@ Run the build script (this will be run automatically on Heroku):
 $ yarn run build
 ```
 
+Note: You may need to install esbuild:
+
+```bash
+$ yarn add -D esbuild
+```
+
+
 ### Deploying to JCDecaux display boards
 
 1. Set the screen orientation in `config/config.js` to `portrait`.
 2. Set the API key in `config/api-key.json`.
-3. Run `./scripts/create-jcd-zip.sh` to create a zip file that can be uploaded to the JCDecaux display boards.
+3. Run `./scripts/generate-jcd-zip.sh` to create a zip file that can be uploaded to the JCDecaux display boards.
 
 ## Updating the Node version
 

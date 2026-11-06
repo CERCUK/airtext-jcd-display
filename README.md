@@ -129,7 +129,8 @@ $ yarn add -D esbuild
 
 1. Set the screen orientation in `config/config.js` to `portrait`.
 2. Set the API key in `config/api-key.json`.
-3. Run `./scripts/generate-jcd-zip.sh` to create a zip file that can be uploaded to the JCDecaux display boards.
+3. Run the build script.
+4. Run `./scripts/generate-jcd-zip.sh` to create a zip file that can be uploaded to the JCDecaux display boards.
 
 ## Updating the Node version
 

@@ -24,7 +24,7 @@
   }
 
   #info-block {
-    font-size: calc(var(--unit) * 6.75);
+    font-size: calc(var(--unit) * 6);
     line-height: 1.1;
     color: var(--main-colour-500);
     position: relative;
@@ -49,7 +49,7 @@
       position: absolute;
       right: 0;
       top: calc(var(--unit) * 4); // ~half the height of the text
-      height: calc(100% - calc(var(--unit) * 4));
+      height: calc(100% - calc(var(--unit) * 8));
     }
   }
 
